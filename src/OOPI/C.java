@@ -9,8 +9,8 @@ public abstract class C {
 
 class D{
 
-    public static void main(String args[]){
-        C c = new C();
-    }
+//    public static void main(String args[]){
+//        C c = new C();
+//    }
 
 }

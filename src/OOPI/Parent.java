@@ -5,7 +5,7 @@ package OOPI;
  */
 class Parent {
 
-    public void Parent() {
+    public  Parent() {
 
         System.out.println("inside parent without arguments");
 
@@ -21,7 +21,7 @@ class Parent {
 
 class Child extends Parent {
 
-    public void Child() {
+    public Child() {
 
         System.out.println("inside child without arguments");
 
