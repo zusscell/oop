@@ -1,11 +1,13 @@
+package OOPI;
+
 /**
  * Created by Zusscell_Ruvalcaba on 10/15/2017.
  */
-class ParentMod {
+class ParentThis {
 
     // this is method not a constructor
 
-    public void ParentMod() {
+    public void ParentThis() {
 
         System.out.println("inside parent without arguments");
 
@@ -13,7 +15,7 @@ class ParentMod {
 
     // this is default constructor.
 
-    public ParentMod() {
+    public ParentThis() {
 
         super(); // hidden call to Object's default constructor
 
@@ -21,7 +23,7 @@ class ParentMod {
 
     }
 
-    public ParentMod(int a) {
+    public ParentThis(int a) {
 
         super(); // hidden call to Object's default constructor
 
@@ -31,11 +33,11 @@ class ParentMod {
 
 }
 
-class ChildMod extends ParentMod {
+class ChildThis extends ParentThis {
 
     // this is a method
 
-    public void ChildMod() {
+    public void ChildThis() {
 
         System.out.println("inside child without arguments");
 
@@ -43,17 +45,17 @@ class ChildMod extends ParentMod {
 
     // this is a default constructor
 
-    public ChildMod() {
+    public ChildThis() {
 
-        super(); // hidden call to Parent's default constructor
+        super(); // hidden call to OOPI.Parent's default constructor
 
         System.out.println("inside child's default constructor");
 
     }
 
-    public ChildMod(int b) {
+    public ChildThis(int b) {
 
-        super(b); // Case - 1 : call to Parent's argument constructor
+        super(b); // Case - 1 : call to OOPI.Parent's argument constructor
 
         System.out.println("inside child's argument constructor");
 
@@ -61,10 +63,12 @@ class ChildMod extends ParentMod {
 
     public static void main(String[] args) {
 
-        ChildMod child = new ChildMod();
+        ChildThis child = new ChildThis();
 
-        ChildMod child1 = new ChildMod(15);
+        ChildThis child1 = new ChildThis(15);
 
     }
 
 }
+
+

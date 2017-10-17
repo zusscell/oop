@@ -1,7 +1,9 @@
+package OOPI;
+
 /**
  * Created by Zusscell_Ruvalcaba on 10/16/2017.
  */
-class B implements A{
+class B implements A {
 
     public void a(){
         System.out.println("implementing method a");
